@@ -1,0 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
+h1 {
+  padding: 50px;
+  margin: 0px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  font-family: "Galmuri11";
+  font-weight: 700;
+  background-color: #bb2649;
+  font-size: 50px;
+}
