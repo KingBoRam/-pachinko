@@ -36,15 +36,18 @@
       />
     </div>
     <div id="grid">
-      <ul class="menu">
-        <li>메뉴추가</li>
-        <li>메뉴확인</li>
-      </ul>
+      <div>
+        <h3>메뉴 추가</h3>
+        <input type="text" id="mn" />
+        <input
+          type="button"
+          value="추가"
+          onclick="addmenu(document.getElementById('mn').value)"
+        />
+        <h3>메뉴 확인</h3>
+      </div>
       <img class="slot" src="slotmachine.png" alt="slotmachine" />
-      <ul class="rank">
-        <li>금주의 1위</li>
-        <li>이달의 1위</li>
-      </ul>
     </div>
+    <div></div>
   </body>
 </html>

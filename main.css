@@ -16,6 +16,8 @@ h1 {
 }
 .par {
   position: relative;
+  /* width: 1300px;
+  margin: 0 auto; */
 }
 .star {
   position: absolute;
@@ -37,20 +39,14 @@ h1 {
   bottom: 10px;
   left: 10px;
 }
-#grid {
-  display: grid;
-  grid-template-columns: 150px 1fr 150px;
-}
-.menu {
-  border-right: 2px dashed black;
-}
-.rank {
-  border-left: 2px dashed black;
-}
+
 .slot {
   padding: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 130px 1fr 130px;
 }
