@@ -6,6 +6,7 @@ function addmenu(mn){
 }
 function showmenu(){
     for(let i=0; i<menu.length; i++){
-        document.write(menu[i]);
+        //document.write(menu[i]);
+		document.getElementById("menu").innerText += "\n" + menu[i];
     }
 }
