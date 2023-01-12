@@ -1,12 +1,19 @@
 var menu = [];
-function addmenu(mn){
+function addMenu(mn){
     menu.push(mn);
     alert('현재 메뉴 : ' + menu.length + '개');
-    showmenu();
+    clear();
+    showMenu();
 }
-function showmenu(){
+function showMenu(){
     for(let i=0; i<menu.length; i++){
-        //document.write(menu[i]);
-		document.getElementById("menu").innerText += "\n" + menu[i];
+        document.getElementById("menu").innerText += menu[i]+"\n" ;     
     }
+}
+function clear(){
+    document.getElementById("menu").innerText = "";
+}
+function randomMenu(){
+    let pick = Math.floor(Math.random()*menu.length);
+    document.getElementById("menu").innerText = "";
 }
