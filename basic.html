@@ -6,11 +6,23 @@
     <script src="main.js"></script>
   </head>
   <body>
+    <input type="text" id="mn" />
+        <input
+          type="button"
+          value="추가"
+          onclick="addmenu(document.getElementById('mn').value)"
+        />
     <script>
-      const dd = ['aa', 'bb', 'cc', 'dd'];
-      for(let i=0; i<dd.length; i++){
-        document.write(dd[i]);
-    }
+      var menu = [];
+      function addmenu(mn){
+        menu.push(mn);
+        alert('현재 메뉴 : ' + menu.length + '개');
+        var i=0;
+        while(i<menu.length){
+          document.write(menu[i]);
+          i=i+1;
+        }
+      }
     </script>
   </body>
 </html>
