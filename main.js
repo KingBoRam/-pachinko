@@ -1,4 +1,4 @@
-var menu = [];
+var menu = ["라면", "짜장면", "김치볶음밥"];
 function addMenu(mn) {
   menu.push(mn);
   alert("현재 메뉴 : " + menu.length + "개");
@@ -13,11 +13,11 @@ function showMenu() {
 function clear() {
   document.getElementById("menu").innerText = "";
 }
-function writeMenu() {
-  let abc = randomMenu(menu);
-  document.getElementById("random").innerText = abc;
-}
 function randomMenu(array) {
   let pick = Math.floor(Math.random() * array.length);
   return array[pick];
+}
+function writeMenu() {
+  let abc = randomMenu(menu);
+  document.getElementById("random").innerText = abc;
 }

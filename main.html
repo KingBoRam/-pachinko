@@ -12,31 +12,37 @@
         메뉴 추천 <br />
         파친코
       </h1>
-      <img class="star" src="star2.png" alt="star" width="50px" height="50px" />
       <img
-        class="star2"
+        class="star_topright"
         src="star2.png"
         alt="star"
         width="50px"
         height="50px"
       />
       <img
-        class="star3"
+        class="star_topleft"
         src="star2.png"
         alt="star"
         width="50px"
         height="50px"
       />
       <img
-        class="star4"
+        class="star_bottomright"
+        src="star2.png"
+        alt="star"
+        width="50px"
+        height="50px"
+      />
+      <img
+        class="star_bottomleft"
         src="star2.png"
         alt="star"
         width="50px"
         height="50px"
       />
     </div>
-    <div id="grid">
-      <div>
+    <div id="par2">
+      <div class="one">
         <h3>메뉴 추가</h3>
         <input type="text" id="mn" />
         <input
@@ -46,11 +52,12 @@
         />
         <h3>메뉴 확인</h3>
         <div id="menu"></div>
-        <input type="button" value="뽑기" onclick="writeMenu();" />
-        <div id="random"></div>
       </div>
-      <img class="slot" src="slotmachine.png" alt="slotmachine" />
+      <div class="two">
+        <!-- <img class="slot" src="slotmachine2.png" alt="slotmachine" /> -->
+      </div>
+      <input class="pick" type="button" value="뽑기" onclick="writeMenu();" />
+      <span id="random"></span>
     </div>
-    <div></div>
   </body>
 </html>
