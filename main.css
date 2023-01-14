@@ -1,12 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
 body {
+  width: 1117px;
+  margin: 0 auto;
   background-color: #26bb98;
-  background-image: url("slotmachine2.png");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 h1 {
-  padding: 50px;
+  padding: 30px;
   margin: 0px;
   text-align: center;
   font-family: "Galmuri11";
@@ -40,9 +39,20 @@ h1 {
   bottom: 10px;
   left: 10px;
 }
-.slot {
-  padding: 0px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#par2 {
+  height: 750px;
+  width: 1117px;
+  background-image: url("slotmachine2.png");
+  margin: 0px;
+  position: relative;
+}
+.pick {
+  position: absolute;
+  bottom: 200px;
+  left: 545px;
+}
+#random {
+  position: absolute;
+  top: 350px;
+  left: 530px;
 }

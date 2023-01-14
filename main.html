@@ -9,7 +9,7 @@
   <body>
     <div class="par">
       <h1>
-        메뉴 추천 <br />
+        식사 추천 <br />
         파친코
       </h1>
       <img
@@ -43,21 +43,20 @@
     </div>
     <div id="par2">
       <div class="one">
-        <h3>메뉴 추가</h3>
+        메뉴 추가<br />
         <input type="text" id="mn" />
         <input
           type="button"
           value="추가"
           onclick="addMenu(document.getElementById('mn').value)"
         />
-        <h3>메뉴 확인</h3>
+        <br />메뉴 확인<br />
         <div id="menu"></div>
       </div>
       <div class="two">
-        <!-- <img class="slot" src="slotmachine2.png" alt="slotmachine" /> -->
+        <input class="pick" type="button" value="뽑기" onclick="writeMenu();" />
+        <span id="random"></span>
       </div>
-      <input class="pick" type="button" value="뽑기" onclick="writeMenu();" />
-      <span id="random"></span>
     </div>
   </body>
 </html>
