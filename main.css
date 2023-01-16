@@ -85,4 +85,17 @@ h1 {
   text-align: center;
   margin: auto;
   line-height: 120px;
+  animation: my-animation 0.2s linear 5;
+}
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  to {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
 }
