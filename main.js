@@ -21,3 +21,20 @@ function writeMenu() {
   let abc = randomMenu(menu);
   document.getElementById("random").innerText = abc;
 }
+function effectMenu() {
+  var el = document.querySelector("#clickme");
+  var dl = document.querySelector("#random");
+  el.onclick = function () {
+    writeMenu();
+    dl.animate(
+      [
+        { transform: "translate(0, -43px)" },
+        { transform: "translate(0, 43px)" },
+      ],
+      {
+        duration: 50,
+        iterations: 15,
+      }
+    );
+  };
+}

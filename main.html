@@ -44,7 +44,7 @@
     <div id="par2">
       <div class="one">
         메뉴 추가<br />
-        <input type="text" id="mn" />
+        <input type="text" id="mn" placeholder="최대5글자!" />
         <input
           type="button"
           value="추가"
@@ -54,11 +54,32 @@
         <div id="menu"></div>
       </div>
       <div class="two">
-        <a href="#" class="pick pickPush pickOrange" onclick="writeMenu();"
+        <a id="clickme" class="pick pickPush pickOrange" onclick="effectMenu();"
           >뽑기</a
         >
-        <span id="random"> </span>
+        <div id="slotbox">
+          <div id="random">*>_<*</div>
+        </div>
       </div>
     </div>
+    <!-- <marquee
+      behavior="scroll"
+      direction="down"
+      scrollamount="10"
+      id="mymarquee"
+    >
+      <p>자장면</p>
+      <p>피자</p>
+    </marquee>
+    <input
+      type="button"
+      value="Stop Marquee"
+      onClick="document.getElementById('mymarquee').stop();"
+    />
+    <input
+      type="button"
+      value="Start Marquee"
+      onClick="document.getElementById('mymarquee').start();"
+    /> -->
   </body>
 </html>
