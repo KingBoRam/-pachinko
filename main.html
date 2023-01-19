@@ -43,18 +43,22 @@
     </div>
     <div id="par2">
       <div class="one">
-        메뉴 추가<br />
-        <input type="text" id="mn" placeholder="최대5글자!" />
-        <input
-          type="button"
-          value="추가"
-          onclick="addMenu(document.getElementById('mn').value)"
-        />
-        <br />메뉴 확인<br />
-        <div id="menu"></div>
+        <div class="menuchuga"><span class="aa">메뉴</span>추가</div>
+        <div class="ii">
+          <input type="text" id="mn" placeholder="최대5글자!" />
+        </div>
+        <div>
+          <input
+            type="button"
+            value="추가"
+            onclick="addMenu(document.getElementById('mn').value)"
+          />
+        </div>
+        <div class="menuchuga"><span class="aa">메뉴</span>확인</div>
+        <div id="list"></div>
       </div>
       <div class="two">
-        <a id="clickme" class="pick pickPush pickOrange" onclick="effectMenu();"
+        <a id="clickme" class="pick pickPush pickOrange" onclick="ff();"
           >뽑기</a
         >
         <div id="slotbox">
