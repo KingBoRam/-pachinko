@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>있다뭐먹지?</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="par">
+      <h1>
+        식사 추천 <br />
+        파친코
+      </h1>
+      <img
+        class="star_topright"
+        src="star2.png"
+        alt="star"
+        width="50px"
+        height="50px"
+      />
+      <img
+        class="star_topleft"
+        src="star2.png"
+        alt="star"
+        width="50px"
+        height="50px"
+      />
+      <img
+        class="star_bottomright"
+        src="star2.png"
+        alt="star"
+        width="50px"
+        height="50px"
+      />
+      <img
+        class="star_bottomleft"
+        src="star2.png"
+        alt="star"
+        width="50px"
+        height="50px"
+      />
+    </div>
+    <div id="par2">
+      <div class="one">
+        <div class="menuchuga"><span class="aa">메뉴</span>추가</div>
+        <div class="ii">
+          <input
+            type="text"
+            id="mn"
+            placeholder="최대5글자! 엔터로입력!"
+            onkeydown="if(window.event.keyCode==13){addMenu(document.getElementById('mn').value)}"
+          />
+        </div>
+        <!-- <span>
+          <input
+            type="button"
+            value="추가"
+            onclick="addMenu(document.getElementById('mn').value)"
+          />
+        </span> -->
+        <div>
+          <div class="menuchuga"><span class="aa">메뉴</span>확인</div>
+          <div id="list">-list-</div>
+        </div>
+      </div>
+      <div class="two">
+        <a id="clickme" class="pick pickPush pickOrange" onclick="ff();"
+          >뽑기</a
+        >
+        <div id="slotbox">
+          <div id="random">*>_<*</div>
+        </div>
+      </div>
+    </div>
+    <!-- <marquee
+      behavior="scroll"
+      direction="down"
+      scrollamount="10"
+      id="mymarquee"
+    >
+      <p>자장면</p>
+      <p>피자</p>
+    </marquee>
+    <input
+      type="button"
+      value="Stop Marquee"
+      onClick="document.getElementById('mymarquee').stop();"
+    />
+    <input
+      type="button"
+      value="Start Marquee"
+      onClick="document.getElementById('mymarquee').start();"
+    /> -->
+  </body>
+</html>
