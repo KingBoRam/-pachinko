@@ -45,17 +45,24 @@
       <div class="one">
         <div class="menuchuga"><span class="aa">메뉴</span>추가</div>
         <div class="ii">
-          <input type="text" id="mn" placeholder="최대5글자!" />
+          <input
+            type="text"
+            id="mn"
+            placeholder="최대5글자! 엔터로입력!"
+            onkeydown="if(window.event.keyCode==13){addMenu(document.getElementById('mn').value)}"
+          />
         </div>
-        <div>
+        <!-- <span>
           <input
             type="button"
             value="추가"
             onclick="addMenu(document.getElementById('mn').value)"
           />
+        </span> -->
+        <div>
+          <div class="menuchuga"><span class="aa">메뉴</span>확인</div>
+          <div id="list">-list-</div>
         </div>
-        <div class="menuchuga"><span class="aa">메뉴</span>확인</div>
-        <div id="list"></div>
       </div>
       <div class="two">
         <a id="clickme" class="pick pickPush pickOrange" onclick="ff();"
