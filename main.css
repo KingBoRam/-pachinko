@@ -120,6 +120,7 @@ h1 {
   padding-right: 15px;
   text-shadow: rgb(20, 36, 18) 3px 0 10px;
   letter-spacing: 5px;
+  display: block;
 }
 .aa {
   color: red;
