@@ -23,9 +23,7 @@ function writeMenu(ex3) {
 }
 
 function effectMenu() {
-  // var el = document.querySelector("#clickme");
-  // el.onclick = function () {
-  var dl = document.querySelector("#random");
+  var dl = document.getElementById("random");
   dl.animate(
     [
       { transform: "translate(0, -100px)" },

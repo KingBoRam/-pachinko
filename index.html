@@ -43,7 +43,6 @@
     </div>
     <div id="par2">
       <div class="one">
-        <!-- <div class="menuchuga"><span class="aa">메뉴</span>추가</div> -->
         <label for="mn" class="menuchuga"
           ><span class="aa">메뉴</span>추가</label
         >
@@ -55,22 +54,13 @@
             onkeydown="if(window.event.keyCode==13){addMenu(document.getElementById('mn').value)}"
           />
         </div>
-        <!-- <span>
-          <input
-            type="button"
-            value="추가"
-            onclick="addMenu(document.getElementById('mn').value)"
-          />
-        </span> -->
-        <div>
+        <div class="pp">
           <div class="menuchuga"><span class="aa">메뉴</span>확인</div>
           <div id="list">-list-</div>
         </div>
       </div>
       <div class="two">
-        <a id="clickme" class="pick pickPush pickOrange" onclick="ff();"
-          >뽑기</a
-        >
+        <a id="clickme" class="pick" onclick="ff();">뽑기</a>
         <div id="slotbox">
           <div id="random">*>_<*</div>
         </div>
