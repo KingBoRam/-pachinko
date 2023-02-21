@@ -41,3 +41,14 @@ function ff() {
   effectMenu();
   setTimeout(() => writeMenu("random"), 1000);
 }
+
+window.onload = function () {
+  let btn = document.getElementById("mn");
+  btn.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" || event.key === 13) {
+      addMenu(btn.value);
+    }
+  });
+  let clic = document.getElementById("clickme");
+  clic.addEventListener("click", ff);
+};
