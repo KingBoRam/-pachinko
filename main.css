@@ -47,6 +47,7 @@ h1 {
   overflow: hidden;
 }
 .pick {
+  border: none;
   position: absolute;
   bottom: 163px;
   left: 498px;
